@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <div class="container__block">
-          <div class="logo-company">
-            <p>Your company's name</p>
+      <div class="container flex">
+        <div class="container__block flex">
+          <div class="logo-company flex">
+            <a href="#">Your company's name</a>
           </div>
-          <div class="nav-block">
+          <div class="nav-block flex">
             <div class="nav">
               <ul class="list-reset nav-list">
                 <li><a href="#" class="link header-nav-link">home</a></li>
@@ -29,12 +31,14 @@
     </header>
     <main>
       <section class="welcom">
-        <div class="container">
-          <div class="container__block">
+        <div class="container flex">
+          <div class="container__block flex">
             <div class="block-img">
-              <img src="" alt="" />
+              <img src="img/main-img.png" alt="" />
+              <img class="mask mask-1" src="img/mask.png" alt="" />
+              <img class="mask mask-2" src="img/mask-2.png" alt="" />
             </div>
-            <div class="block-article">
+            <div class="block-article min-width-block">
               <article>
                 <div class="center-info">
                   <h1>Welcom, person!</h1>
@@ -45,17 +49,20 @@
                   Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
                   natoque penatibus et magnis dis parturient montes, nascetur
                   ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-                  eu, pretium quis, sem. Nulla consequat massa quis enim. Donec
-                  pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                  eu, pretium quis, sem. Nulla consequat massa quis enim.
+                  <b
+                    >Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    eget, arcu.</b
+                  >
                 </p>
                 <br />
                 <p>
                   In enim justo, rhoncus ut, imperdiet a, venenatis vitae,
                   justo. Nullam dictum felis eu pede mollis pretium. Integer
-                  tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-                  vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-                  consequat vitae, eleifend ac, enim. Aliquam lorem ante,
-                  dapibus in, viverra quis, feugiat a, tellus.
+                  tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+                  <b>Aenean vulputate eleifend tellus.</b> Aenean leo ligula,
+                  porttitor eu, consequat vitae, eleifend ac, enim. Aliquam
+                  lorem ante, dapibus in, viverra quis, feugiat a, tellus.
                 </p>
               </article>
             </div>
@@ -63,13 +70,15 @@
         </div>
       </section>
       <section class="team">
-        <div class="container">
-          <div class="container__block">
+        <div class="container flex">
+          <div class="container__block flex">
             <div class="info-team">
-              <ul class="list-reset list-team">
+              <ul class="list-reset list-team flex">
                 <li class="item-person">
                   <div class="block-img-person">
-                    <img src="" alt="" />
+                    
+                    <div class="color-rectangle rectangle-1"></div>
+                    <img src="img/person.png" alt="" />
                   </div>
                   <article class="person">
                     <div class="block-info-title">
@@ -82,26 +91,69 @@
                       natoque penatibus et magnis dis parturient montes,
                       nascetur ridiculus mus. Donec quam felis, ultricies nec,
                       pellentesque eu, pretium quis, sem. Nulla consequat massa
-                      quis enim. Donec pede justo, fringilla vel, aliquet nec,
-                      vulputate eget, arcu.
+                      quis enim. <b>Donec pede justo, fringilla vel, aliquet nec,
+                      vulputate eget, arcu.</b>
                     </p>
                     <button class="btn-reset btn-person">read more</button>
                   </article>
                 </li>
-                <li class="item-person"></li>
-                <li class="item-person"></li>
+                <li class="item-person">   
+                  <div class="block-img-person">
+                    <img src="img/person.png" alt="" />
+                    <div class="color-rectangle rectangle-2"></div>
+                  </div>
+                  <article class="person">
+                    <div class="block-info-title">
+                      <h2>title here</h2>
+                      <p>this is a subheadline</p>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                      pellentesque eu, pretium quis, sem. Nulla consequat massa
+                      quis enim. <b>Donec pede justo, fringilla vel, aliquet nec,
+                      vulputate eget, arcu.</b>
+                    </p>
+                    <button class="btn-reset btn-person">read more</button>
+                  </article></li>
+                <li class="item-person">                    <div class="block-info-title">
+                  <div class="block-img-person">
+                    <img src="img/person.png" alt="" />
+                    <div class="color-rectangle rectangle-3"></div>
+
+                  </div>
+                  <article class="person">
+                    <div class="block-info-title">
+                      <h2>title here</h2>
+                      <p>this is a subheadline</p>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                      Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                      natoque penatibus et magnis dis parturient montes,
+                      nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                      pellentesque eu, pretium quis, sem. Nulla consequat massa
+                      quis enim. <b>Donec pede justo, fringilla vel, aliquet nec,
+                      vulputate eget, arcu.</b>
+                    </p>
+                    <button class="btn-reset btn-person">read more</button>
+                  </article>
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
       <section class="service">
-        <div class="container">
-          <div class="container__block">
-            <div class="block-img">
-              <img src="" alt="" />
+        <div class="container flex">
+          <div class="container__block min-width-block flex">
+            <div class="block-img-serivice">
+              <img src="img/work-space.png" alt="" />
+              <div class="rectange-4"></div>
             </div>
-            <div class="block-article-service">
+            <div class="block-article-service flex">
               <article>
                 <h2>hey, this is a good place for cta</h2>
                 <p>this is a subheadline</p>
@@ -125,12 +177,13 @@
         </div>
       </section>
       <section class="addition">
-        <div class="container">
-          <div class="container__block">
+        <div class="container flex">
+          <div class="container__block flex">
             <div class="block-img addition-block-img">
-              <img src="" alt="" />
+              <img src="img/person-2.png" alt="" />
+              <div class="rectange-5"></div>
             </div>
-            <div class="block-article-service block-article-addition">
+            <div class="block-article-service block-article-addition flex">
               <article>
                 <h2>hey, this is a good place for cta</h2>
                 <p>this is a subheadline</p>
@@ -157,9 +210,10 @@
       </section>
     </main>
     <footer>
-      <div class="container">
-        <div class="container__block">
-          <div class="info-footer-block">
+      <div class="container flex">
+        <div class="container__block flex">
+          <div class="info-footer-block min-width-block">
+
             <div class="contacts-block">
               <article>
                 <h2>hey, wanna talk?</h2>

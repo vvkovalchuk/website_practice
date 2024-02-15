@@ -1,0 +1,336 @@
+.flex {
+  display: flex;
+}
+
+h1,
+h2,
+p {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  justify-content: center;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container__block {
+  max-width: 1240px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* header */
+.header .container__block {
+  display: flex;
+  min-width: 1240px;
+  padding: 41px 0 25px 0;
+}
+
+.logo-company {
+  align-items: center;
+}
+
+.logo-company a {
+}
+
+.nav-block {
+  align-items: center;
+}
+
+.nav-block .nav-list {
+  display: flex;
+  min-width: 574px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.logo-company {
+  font-size: 16px;
+}
+
+.header-nav-link {
+  font-size: 16px;
+}
+
+/* main */
+
+/* welcom */
+
+.welcom .container__block {
+  flex-direction: column;
+}
+
+.block-img {
+  position: relative;
+}
+
+.mask-1,
+.mask-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Визначте висоту маски на ваш власний розсуд */
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+}
+
+.min-width-block {
+  max-width: 1040px;
+}
+
+.block-article article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-info {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.welcom .container__block {
+  margin-bottom: 75px;
+}
+
+/* team */
+.team .container__block {
+  min-width: 1260px;
+  margin-bottom: 100px;
+}
+
+.list-team {
+  min-width: 1260px;
+  justify-content: space-between;
+}
+.block-img-person {
+  position: relative;
+  display: inline-block;
+  width: 370px;
+  height: 390px;
+  margin-bottom: 20px;
+}
+
+.block-img-person img {
+  display: block;
+  width: 350px;
+}
+
+.color-rectangle {
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  width: 365px; /* Зробити ширину прямокутника рівною ширині зображення */
+  height: 312px;
+  background-color: #1a8198; /* Встановіть кольоровий код вашого вибраного кольору */
+}
+.rectangle-3,
+.rectangle-1 {
+  bottom: 14px;
+  left: 15px;
+  top: inherit;
+}
+
+.rectangle-2 {
+  top: -20px;
+  right: -5px;
+}
+
+.person {
+  text-align: center;
+  max-width: 350px;
+}
+
+.person p {
+  margin-bottom: 20px;
+}
+.block-info-title {
+  margin-bottom: 20px;
+}
+
+.block-info-title h2 {
+  font-size: 25px;
+}
+
+.block-info-title p {
+  font-size: 16px;
+}
+
+.btn-person {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  width: 180px;
+  height: 45px;
+  background-color: #26a4bf;
+}
+
+/* service */
+
+.service {
+  padding: 40px 0;
+  background-color: #26a4bf;
+}
+
+.service .container__block {
+  min-width: 1040px;
+}
+
+.block-img-serivice {
+  min-width: 533px;
+  min-height: 384px;
+  position: relative;
+}
+
+.block-img-serivice img {
+  z-index: 2;
+  position: relative;
+}
+
+.rectange-4 {
+  width: 398px;
+  position: absolute;
+  height: 356px;
+  top: 25px;
+  right: 5px;
+  z-index: 1;
+  background-color: #1a8198;
+}
+
+.block-article-service {
+  color: white;
+  text-align: right;
+  min-height: 356px;
+  max-width: 394px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-servise {
+  width: 180px;
+  height: 45px;
+  background-color: #e8e36d;
+  align-self: flex-end; /* Вирівняти кнопку по нижньому краю */
+}
+
+/* addition */
+
+.addition .container__block {
+  min-width: 1040px;
+  margin-top: 90px;
+}
+
+.addition .block-article-service {
+  color: black;
+}
+
+.addition-block-img {
+  min-width: 470px;
+  min-height: 520px;
+  position: relative;
+}
+
+.addition-block-img img {
+  z-index: 2;
+  position: relative;
+}
+
+.rectange-5 {
+  width: 262px;
+  position: absolute;
+  height: 412px;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+  background-color: #26a4bf;
+}
+
+.block-article-addition {
+  min-height: 420px;
+}
+
+.btn-addition {
+  width: 180px;
+  color: white;
+  height: 45px;
+  background-color: #1a8198;
+  align-self: flex-end; /* Вирівняти кнопку по нижньому краю */
+}
+
+/* footer test */
+
+footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+.info-footer-block {
+  margin-right: 20px;
+}
+
+.contacts-block h2,
+.comment-block h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contacts-block p,
+.comment-block p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.comment-block button {
+  background-color: #1a8198;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.footer-block {
+  text-align: right;
+}
+
+.link-company p {
+  color: #666;
+  font-size: 14px;
+}
+
+.nav-footer-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-footer-block ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+}
