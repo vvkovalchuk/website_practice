@@ -1,3 +1,5 @@
+/* Доданий CSS код */
+
 .flex {
   display: flex;
 }
@@ -37,6 +39,13 @@ a {
 }
 
 /* header */
+
+body {
+  position: relative;
+  background-image: url("../img/Vector-3.png");
+  background-repeat: no-repeat; /* Заборона повторення зображення */
+  background-position: top -10% left;
+}
 .header .container__block {
   display: flex;
   min-width: 1240px;
@@ -190,6 +199,13 @@ a {
 /* service */
 
 .service {
+  position: relative;
+  background-image: url("../img/Vector-3.png");
+  background-repeat: no-repeat; /* Заборона повторення зображення */
+  background-position: top 100% left;
+}
+
+.service {
   padding: 40px 0;
   background-color: #26a4bf;
 }
@@ -237,9 +253,17 @@ a {
 
 /* addition */
 
+.addition {
+  position: relative;
+  background-image: url("../img/Vector-4.png");
+  background-repeat: no-repeat; /* Заборона повторення зображення */
+  background-position: right;
+}
+
 .addition .container__block {
   min-width: 1040px;
   margin-top: 90px;
+  margin-bottom: 105px;
 }
 
 .addition .block-article-service {
@@ -282,17 +306,46 @@ a {
 /* footer test */
 
 footer {
-  background-color: #f5f5f5;
+  background-color: #1a8198;
   padding: 20px 0;
+  position: relative;
+  background-image: url("../img/Vector-3.png");
+  background-repeat: no-repeat; /* Заборона повторення зображення */
+  background-position: top -100% left;
+  background-size: 16%;
+}
+
+footer .container__block {
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .info-footer-block {
   margin-right: 20px;
 }
 
+.footer-block {
+  min-width: 1240px;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts-block {
+  min-width: 49%;
+}
+
+.comment-block {
+  min-width: 49%;
+  flex-direction: column;
+  padding-left: 15px;
+  border-left: #26a4bf dashed 2px;
+}
+
 .contacts-block h2,
 .comment-block h2 {
-  color: #333;
+  color: #fff;
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -300,26 +353,24 @@ footer {
 
 .contacts-block p,
 .comment-block p {
-  color: #666;
+  color: #fff;
   font-size: 16px;
   line-height: 1.6;
 }
 
 .comment-block button {
-  background-color: #1a8198;
+  margin-top: 15px;
+  background-color: #26a4bf;
   color: #fff;
+  align-self: flex-start;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.footer-block {
-  text-align: right;
-}
-
 .link-company p {
-  color: #666;
+  color: #fff;
   font-size: 14px;
 }
 
@@ -332,5 +383,8 @@ footer {
   display: inline-block;
   margin-left: 10px;
   font-size: 14px;
-  color: #666;
+}
+
+.nav-footer-block a {
+  color: #fff;
 }
